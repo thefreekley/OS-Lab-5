@@ -5,7 +5,7 @@ import com.spring.project.lab.domain.GeneralModelInterface;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "description", schema = "fedyniak_illya_db", catalog = "")
+@Table(name = "description", schema = "andrii_matviichuk_db", catalog = "")
 public class Description implements GeneralModelInterface {
     private Integer id;
     private String shortDesc;

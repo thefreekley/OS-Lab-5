@@ -36,7 +36,7 @@ services:
       db:
         condition: service_healthy
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/fedyniak_illya_db
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/andrii_matviichuk_db
       SPRING_DATASOURCE_USERNAME: "root"
       SPRING_DATASOURCE_PASSWORD: "12072001"
     ports:
@@ -47,8 +47,8 @@ services:
     container_name: db
     environment:
       - MYSQL_ROOT_PASSWORD=12072001
-      - MYSQL_DATABASE=fedyniak_illya_db
-      - MYSQL_USER=Illya Fedyniak
+      - MYSQL_DATABASE=andrii_matviichuk_db
+      - MYSQL_USER=Matviichuk Andrii
       - MYSQL_PASSWORD=12072001
     ports:
       - 3307:3306

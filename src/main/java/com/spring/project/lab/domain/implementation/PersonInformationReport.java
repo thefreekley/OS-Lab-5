@@ -7,7 +7,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-@Table(name = "person_information_report", schema = "fedyniak_illya_db")
+@Table(name = "person_information_report", schema = "andrii_matviichuk_db")
 public class PersonInformationReport implements GeneralModelInterface {
     private Integer id;
     private String name;

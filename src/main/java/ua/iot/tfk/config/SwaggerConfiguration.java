@@ -22,7 +22,7 @@ import java.util.List;
 public class SwaggerConfiguration {
     private static final String SWAGGER_API_VERSION = "1.0";
     private static final String LICENSE_TEXT = "License";
-    private static final String title = "Chuvash";
+    private static final String title = "Os exam lab XD Matviichuk Anrii";
     private static final String description = "Lab6 DB";
 
     private ApiInfo apiInfo() {

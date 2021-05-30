@@ -26,20 +26,20 @@ public class SwaggerConfiguration {
     private static final String description = "OS EXAM Matviichuk Andrii";
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title(title).description(description).license(LICENSE_TEXT)
-                .version(SWAGGER_API_VERSION).build();
+        return new ApiInfoBuilder()
+                .title(title)
+                .description(description)
+                .license(LICENSE_TEXT)
+                .version(SWAGGER_API_VERSION)
+                .build();
     }
-
     @Bean
     public Docket decksApi() {
-        return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).pathMapping("/").select()
-                .paths(Predicates.not(PathSelectors.regex("/error.*"))).build();
-    }
-
-    @Bean
-    public LinkDiscoverers discoverers() {
-        List<LinkDiscoverer> plugins = new ArrayList<>();
-        plugins.add(new CollectionJsonLinkDiscoverer());
-        return new LinkDiscoverers(SimplePluginRegistry.create(plugins));
+        return new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(apiInfo())
+                .pathMapping("/")
+                .select()
+                .paths(PathSelectors.any())
+                .build();
     }
 }

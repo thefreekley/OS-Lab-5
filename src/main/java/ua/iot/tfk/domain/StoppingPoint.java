@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "stopping_point")
+@Table(name = "stopping_point",schema = "db_jdbc_lab")
 public class StoppingPoint {
 
     @Id

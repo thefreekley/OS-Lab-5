@@ -23,7 +23,7 @@ public class SwaggerConfiguration {
     private static final String SWAGGER_API_VERSION = "1.0";
     private static final String LICENSE_TEXT = "License";
     private static final String title = "Chuvash";
-    private static final String description = "Lab6 DB";
+    private static final String description = "OS EXAM Matviichuk Andrii";
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title(title).description(description).license(LICENSE_TEXT)

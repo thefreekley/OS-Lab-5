@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tourist")
+@Table(name = "tourist",schema = "db_jdbc_lab")
 public class Tourist {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tour_has_guide")
+@Table(name = "tour_has_guide",schema = "db_jdbc_lab")
 public class TourHasGuide {
 
 

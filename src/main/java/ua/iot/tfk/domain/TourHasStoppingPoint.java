@@ -6,7 +6,7 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "tour_has_stopping_point")
+@Table(name = "tour_has_stopping_point",schema = "db_jdbc_lab")
 public class TourHasStoppingPoint {
 
 

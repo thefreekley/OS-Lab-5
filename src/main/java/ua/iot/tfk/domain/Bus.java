@@ -6,7 +6,7 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "bus")
+@Table(name = "bus", schema = "db_jdbc_lab")
 public class Bus {
 
 

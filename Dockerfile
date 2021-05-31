@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:bionic
 
 ENV MYSQL_PWD root
 RUN echo "mysql-server mysql-server/root_password password $MYSQL_PWD" | debconf-set-selections
